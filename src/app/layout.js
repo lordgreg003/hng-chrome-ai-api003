@@ -10,16 +10,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta
+          // translate -api
           httpEquiv="origin-trial"
-          content="ApywZEcawPu3bp6OLLTdoGZKtPjN5sKcNOYQ7FrAJbcOp/vfx7SNIZu8Zxj9gqcIPXzkGd5/KiS1HpvUvKee5gwAAABVeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJmZWF0dXJlIjoiQUlTdW1tYXJpemF0aW9uQVBJIiwiZXhwaXJ5IjoxNzUzMTQyNDAwfQ=="
+          content="AqgJJd4BeFIMAv9xxcqaWC8V/i3rheT4h+/1Ur33iCrvnKNTcFA0/WaZNSH/MB9uqHCiyXvkW4icPkEXRaJCUQ0AAAB6eyJvcmlnaW4iOiJodHRwczovL2huZy1jaHJvbWUtYWktYXBpMDAzLnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6IlRyYW5zbGF0aW9uQVBJIiwiZXhwaXJ5IjoxNzUzMTQyNDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZX0="
         />
+        {/* summarizer-api */}
         <meta
           httpEquiv="origin-trial"
-          content="AlvnQOgXEaDkm1KTvW3ZasTnP5EAdLCnhbhfTzwAE2D5V1t2jyJ3+jjnQWgXOtgO40FeJ2rt7V69DIsxHW/7uA4AAABXeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJmZWF0dXJlIjoiTGFuZ3VhZ2VEZXRlY3Rpb25BUEkiLCJleHBpcnkiOjE3NDk1OTk5OTl9"
+          content="AmWCdQTTe66+sjIm1Z3nBJY+BKTveR7HN0xnE9XFkztcYMHL++5XICOrR+OMCNuStJOTNuxgBxLvMBeJuFBTdg8AAAB+eyJvcmlnaW4iOiJodHRwczovL2huZy1jaHJvbWUtYWktYXBpMDAzLnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6IkFJU3VtbWFyaXphdGlvbkFQSSIsImV4cGlyeSI6MTc1MzE0MjQwMCwiaXNTdWJkb21haW4iOnRydWV9"
         />
+        {/* language-detector-api */}
         <meta
           httpEquiv="origin-trial"
-          content="Aoeg49e8gXziww8aMaciOT3ocfAg14TCdd6srBr0/ENCVaog72otR4Or4Qjz9qByZNGl2mbK/pxvft9j0jf8sw0AAABReyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJmZWF0dXJlIjoiVHJhbnNsYXRpb25BUEkiLCJleHBpcnkiOjE3NTMxNDI0MDB9"
+          content="Aqy+RBrBuB8QXDEUuln59a0iEKtFPghb3+ZSygZ5BrzOibOoCVJwvN6vKJU4o1jto91FyABN0x+tKtSkPOYzzgQAAACAeyJvcmlnaW4iOiJodHRwczovL2huZy1jaHJvbWUtYWktYXBpMDAzLnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6Ikxhbmd1YWdlRGV0ZWN0aW9uQVBJIiwiZXhwaXJ5IjoxNzQ5NTk5OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0="
         />
       </head>
       <body>{children}</body>
