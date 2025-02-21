@@ -51,7 +51,7 @@ function SummarizerComponent() {
   };
 
   const handleSummarize = async () => {
-    if (summarizer && inputText.trim()) {
+    if (summarizer && inputText.trim().length > 150) {
       setLoading(true);
       const result = await summarizer.summarize(inputText);
       setSummary(result);
@@ -71,13 +71,19 @@ function SummarizerComponent() {
             </p>
           ) : (
             <>
+              {summary && (
+                <div className="summary-container">
+                  <h3 className="summary-title">Summary:</h3>
+                  <p>{summary}</p>
+                </div>
+              )}
               <textarea
                 value={inputText}
                 onChange={handleInputChange}
                 placeholder="Enter text to summarize..."
                 rows={6}
                 cols={50}
-                className="input-textarea"
+                className="input-textarea "
               />
               <br />
               <button
@@ -90,12 +96,6 @@ function SummarizerComponent() {
               >
                 {loading ? "Summarizing..." : "Summarize Text"}
               </button>
-              {summary && (
-                <div className="summary-container">
-                  <h3 className="summary-title">Summary:</h3>
-                  <p>{summary}</p>
-                </div>
-              )}
             </>
           )}
         </>
