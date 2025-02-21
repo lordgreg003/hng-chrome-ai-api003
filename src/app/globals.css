@@ -3,18 +3,55 @@
 @tailwind utilities;
 
 .translation-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
 }
 
 .translation-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 16px;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.translation-chat {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  height: 70vh;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.translated {
+  align-self: flex-start;
+  background: #e0f2fe;
+  color: black;
+}
+
+.translation-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
 
 .translation-textarea {
-  margin-bottom: 8px;
   padding: 8px;
   border: 1px solid #d1d5db;
   border-radius: 5px;
@@ -24,7 +61,6 @@
 }
 
 .translation-select {
-  margin-bottom: 8px;
   padding: 8px;
   border: 1px solid #d1d5db;
   border-radius: 5px;
@@ -54,21 +90,12 @@
 .translation-error {
   color: #ef4444;
   margin-top: 8px;
+  text-align: center;
 }
 
-.translation-result {
-  margin-top: 20px;
-  padding: 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 5px;
-}
-
-.translation-result-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
 
 /*--------- summarizer design ------- */
+
 
 .summarizer-container {
   padding: 20px;
@@ -130,6 +157,7 @@
   color: red;
   font-weight: bold;
 }
+
 
 /*---------- language detection -------- */
 
